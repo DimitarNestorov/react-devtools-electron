@@ -1,0 +1,26 @@
+{
+	"name": "react-electron-devtools",
+	"version": "3.6.0",
+	"description": "Add React DevTools to your Electron app",
+	"main": "./dist/index.js",
+	"repository": "https://dimitarnestorov@github.com/dimitarnestorov/react-electron-devtools.git",
+	"author": "Dimitar Nestorov <opensource@dimitarnestorov.com> (https://dimitarnestorov.com)",
+	"license": "MIT",
+	"scripts": {
+		"prepublishOnly": "yarn run build && yarn run download-extension && yarn run check-extension-version",
+		"download-extension": "rimraf extension && ced fmkadmapgofadopljbjfkapdkoienihi extension",
+		"check-extension-version": "ts-node checkExtensionVersion.ts",
+		"build": "rimraf dist && tsc"
+	},
+	"devDependencies": {
+		"chrome-ext-downloader": "^1.0.4",
+		"electron": "1.8.8",
+		"react-devtools": "^3.6.0",
+		"rimraf": "^2.6.3",
+		"ts-node": "^8.0.2",
+		"typescript": "^3.2.4"
+	},
+	"peerDependencies": {
+		"electron": "*"
+	}
+}
