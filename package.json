@@ -15,7 +15,7 @@
 	},
 	"devDependencies": {
 		"chrome-ext-downloader": "^1.0.4",
-		"electron": "1.8.8",
+		"electron": "4.0.2",
 		"react-devtools": "^3.6.0",
 		"rimraf": "^2.6.3",
 		"ts-node": "^8.0.2",
