@@ -6,6 +6,11 @@
 	"repository": "https://dimitarnestorov@github.com/dimitarnestorov/react-electron-devtools.git",
 	"author": "Dimitar Nestorov <opensource@dimitarnestorov.com> (https://dimitarnestorov.com)",
 	"license": "MIT",
+	"greenkeeper": {
+		"ignore": [
+			"electron"
+		]
+	},
 	"scripts": {
 		"test": "exit 0",
 		"prepublishOnly": "yarn run build && yarn run download-extension && yarn run check-extension-version",
@@ -15,7 +20,7 @@
 	},
 	"devDependencies": {
 		"chrome-ext-downloader": "^1.0.4",
-		"electron": "4.0.2",
+		"electron": "1.8.8",
 		"react-devtools": "^3.6.0",
 		"rimraf": "^2.6.3",
 		"ts-node": "^8.0.2",
