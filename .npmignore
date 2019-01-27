@@ -3,3 +3,4 @@ tsconfig.json
 yarn.lock
 checkExtensionVersion.ts
 .vscode
+.travis.yml

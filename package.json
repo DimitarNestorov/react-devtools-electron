@@ -7,6 +7,7 @@
 	"author": "Dimitar Nestorov <opensource@dimitarnestorov.com> (https://dimitarnestorov.com)",
 	"license": "MIT",
 	"scripts": {
+		"test": "exit 0",
 		"prepublishOnly": "yarn run build && yarn run download-extension && yarn run check-extension-version",
 		"download-extension": "rimraf extension && ced fmkadmapgofadopljbjfkapdkoienihi extension",
 		"check-extension-version": "ts-node checkExtensionVersion.ts",
