@@ -1,7 +1,11 @@
 # react-electron-devtools
 
+TypeScript:
 ```javascript
-import addReactDevToolsExtension from 'react-electron-devtools'
+isDev && import('react-electron-devtools')
+```
 
-addReactDevToolsExtension()
+JavaScript:
+```javascript
+isDev && require('react-electron-devtools')
 ```

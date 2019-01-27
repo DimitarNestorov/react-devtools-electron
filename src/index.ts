@@ -1,7 +1,9 @@
-import { join } from 'path'
+import { app } from 'electron'
 
-import { BrowserWindow } from 'electron'
+import { addReactDevToolsExtension } from './utils'
 
-export default function addReactDevToolsExtension() {
-	BrowserWindow.addDevToolsExtension(join(__dirname, '..', 'extension'))
+if (app.isReady()) {
+	addReactDevToolsExtension()
+} else {
+	app.once('ready', addReactDevToolsExtension)
 }
