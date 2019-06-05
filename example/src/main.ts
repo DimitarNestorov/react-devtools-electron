@@ -19,19 +19,8 @@ function createWindow() {
 
 	mainWindow.on('closed', () => {
 		mainWindow = null
-	})
-}
-
-app.on('ready', createWindow)
-
-if (process.platform !== 'darwin') {
-	app.on('window-all-closed', () => {
 		app.quit()
 	})
 }
 
-app.on('activate', () => {
-	if (mainWindow === null) {
-		createWindow()
-	}
-})
+app.on('ready', createWindow)
