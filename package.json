@@ -1,5 +1,5 @@
 {
-	"name": "react-electron-devtools",
+	"name": "react-devtools-electron",
 	"version": "3.6.0",
 	"description": "Add React DevTools to your Electron app",
 	"main": "./dist/index.js",
