@@ -1,6 +1,4 @@
-# react-electron-devtools
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/dimitarnestorov/react-electron-devtools.svg)](https://greenkeeper.io/)
+# react-devtools-electron
 
 TypeScript:
 ```javascript
