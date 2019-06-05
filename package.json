@@ -7,19 +7,29 @@
 	"author": "Dimitar Nestorov <opensource@dimitarnestorov.com> (https://dimitarnestorov.com)",
 	"license": "MIT",
 	"scripts": {
-		"test": "yarn run build",
-		"prepublishOnly": "yarn run build && yarn run download-extension && yarn run check-extension-version",
+		"test": "yarn run build && yarn run build-example",
+		"prepublishOnly": "yarn run clear && yarn run test && yarn run download-extension && yarn run check-extension-version",
+		"clear-cache": "rimraf .cache",
+		"clear": "rimraf .cache && rimraf ./dist && rimraf ./example/dist",
 		"download-extension": "rimraf extension && ced fmkadmapgofadopljbjfkapdkoienihi extension",
 		"check-extension-version": "ts-node checkExtensionVersion.ts",
-		"build": "rimraf dist && tsc"
+		"build-example": "yarn run build -p ./example/tsconfig.json",
+		"watch-example": "yarn run build-example --watch",
+		"run-example": "electron ./example",
+		"build": "tsc",
+		"watch": "yarn run build --watch"
 	},
 	"devDependencies": {
+		"@types/react": "^16.8.19",
+		"@types/react-dom": "^16.8.4",
 		"chrome-ext-downloader": "^1.0.4",
 		"electron": "1.8.8",
+		"react": "^16.8.6",
 		"react-devtools": "^3.6.0",
+		"react-dom": "^16.8.6",
 		"rimraf": "^2.6.3",
 		"ts-node": "^8.0.2",
-		"typescript": "^3.2.4"
+		"typescript": "^3.5.1"
 	},
 	"peerDependencies": {
 		"electron": "*"

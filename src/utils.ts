@@ -1,4 +1,3 @@
-
 import { join } from 'path'
 
 import { BrowserWindow } from 'electron'
@@ -17,7 +16,7 @@ const extensionManifest: ChromeExtensionManifest = require(`${extensionPath}/man
 
 export function addReactDevToolsExtension() {
 	const extensions = BrowserWindow.getDevToolsExtensions() as DevToolsExtensions
-	const installedExtension = extensions[extensionManifest.name] 
+	const installedExtension = extensions[extensionManifest.name]
 	if (!installedExtension) {
 		BrowserWindow.addDevToolsExtension(extensionPath)
 	} else if (installedExtension.version !== extensionManifest.version) {

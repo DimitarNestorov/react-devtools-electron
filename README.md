@@ -1,7 +1,7 @@
 # react-devtools-electron
 
 TypeScript:
-```javascript
+```typescript
 isDev && import('react-electron-devtools')
 ```
 

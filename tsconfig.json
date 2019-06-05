@@ -1,9 +1,15 @@
 {
 	"compilerOptions": {
+		"strict": true,
 		"noImplicitAny": true,
-		"sourceMap": true,
 		"declaration": true,
+		"incremental": true,
+		"tsBuildInfoFile": "./.cache/library.tsbuildinfo",
 		"outDir": "dist",
+		"lib": [
+			"es2015",
+			"dom",
+		],
 	},
 	"include": [
 		"src",
