@@ -1136,9 +1136,9 @@ react-devtools-core@^3.6.0:
     ws "^3.3.1"
 
 react-devtools@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/react-devtools/-/react-devtools-3.6.0.tgz#e4cb3ab9a16aa1bda6a1158818f8df5e95ec54b0"
-  integrity sha512-opbpnBZFRaQ6lTBzOUaLZwdm1qd5WOU13qApWUvYAV7KLIQodkcs3r5M4lcCWwQWiIececur40PY7xY/wqPB8Q==
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/react-devtools/-/react-devtools-3.6.1.tgz#a208651cf23283cafdf265a194b7480b59c3e0d4"
+  integrity sha512-28hOmfrp5SfFpzZ4jg5lTg/NliAgbyvAxQ3fscUaKeiUPWi9y1aMs82bVYjYTHUG8mEDv55AjTNblyVyE2+Ftw==
   dependencies:
     cross-spawn "^5.0.1"
     electron "^1.8.7"
