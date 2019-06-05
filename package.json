@@ -6,13 +6,8 @@
 	"repository": "https://dimitarnestorov@github.com/dimitarnestorov/react-electron-devtools.git",
 	"author": "Dimitar Nestorov <opensource@dimitarnestorov.com> (https://dimitarnestorov.com)",
 	"license": "MIT",
-	"greenkeeper": {
-		"ignore": [
-			"electron"
-		]
-	},
 	"scripts": {
-		"test": "exit 0",
+		"test": "yarn run build",
 		"prepublishOnly": "yarn run build && yarn run download-extension && yarn run check-extension-version",
 		"download-extension": "rimraf extension && ced fmkadmapgofadopljbjfkapdkoienihi extension",
 		"check-extension-version": "ts-node checkExtensionVersion.ts",
