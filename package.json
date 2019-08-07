@@ -23,7 +23,7 @@
 		"@types/react": "^16.8.19",
 		"@types/react-dom": "^16.8.4",
 		"chrome-ext-downloader": "^1.0.4",
-		"electron": "4.2.8",
+		"electron": "4.2.9",
 		"react": "^16.8.6",
 		"react-devtools": "^3.6.0",
 		"react-dom": "^16.8.6",
