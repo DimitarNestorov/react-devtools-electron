@@ -1,7 +1,7 @@
 src
 tsconfig.json
 yarn.lock
-checkExtensionVersion.ts
+check-extension-version.ts
 .vscode
 .travis.yml
 .cache
