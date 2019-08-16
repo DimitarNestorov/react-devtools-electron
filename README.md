@@ -2,10 +2,10 @@
 
 TypeScript:
 ```typescript
-isDev && import('react-electron-devtools')
+isDev && import('react-devtools-electron')
 ```
 
 JavaScript:
 ```javascript
-isDev && require('react-electron-devtools')
+isDev && require('react-devtools-electron')
 ```

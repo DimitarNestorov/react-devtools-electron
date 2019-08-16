@@ -33,5 +33,10 @@
 	},
 	"peerDependencies": {
 		"electron": "*"
-	}
+	},
+	"keywords": [
+		"react",
+		"devtools",
+		"electron"
+	]
 }
