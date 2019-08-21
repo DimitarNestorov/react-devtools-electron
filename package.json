@@ -1,6 +1,6 @@
 {
 	"name": "react-devtools-electron",
-	"version": "4.0.2",
+	"version": "4.0.5",
 	"description": "Add React DevTools to your Electron app",
 	"main": "./dist/index.js",
 	"repository": "https://dimitarnestorov@github.com/dimitarnestorov/react-devtools-electron.git",
@@ -25,7 +25,7 @@
 		"chrome-ext-downloader": "^1.0.4",
 		"electron": "4.2.9",
 		"react": "^16.8.6",
-		"react-devtools": "^4.0.0",
+		"react-devtools": "4.0.5",
 		"react-dom": "^16.8.6",
 		"rimraf": "^3.0.0",
 		"ts-node": "^8.0.2",
