@@ -8,3 +8,4 @@ check-extension-version.ts
 example
 yarn-error.log
 showcase.png
+.hintrc

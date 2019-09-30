@@ -1,0 +1,9 @@
+{
+    "connector": {
+		"name": "local"
+	},
+	"extends": ["development"],
+	"hints": {
+		"typescript-config/import-helpers": "off"
+	}
+}

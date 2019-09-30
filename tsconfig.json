@@ -6,12 +6,15 @@
 		"incremental": true,
 		"tsBuildInfoFile": "./.cache/library.tsbuildinfo",
 		"outDir": "dist",
+		"target": "es5",
+		"removeComments": true,
+		"forceConsistentCasingInFileNames": true,
 		"lib": [
 			"es2015",
-			"dom",
-		],
+			"dom"
+		]
 	},
 	"include": [
-		"src",
-	],
+		"src"
+	]
 }
