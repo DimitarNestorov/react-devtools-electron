@@ -61,10 +61,10 @@
     "@hint/hint-manifest-is-valid" "^3.2.10"
     "@hint/parser-manifest" "^2.2.11"
 
-"@hint/configuration-web-recommended@^7.2.5":
-  version "7.2.5"
-  resolved "https://registry.yarnpkg.com/@hint/configuration-web-recommended/-/configuration-web-recommended-7.2.5.tgz#42d0c2e90c4de2cf5a83a935d077317eedd753c4"
-  integrity sha512-iIRHMu/LcURHlxT3+WHh2G+1zoAEKK4y1qlg7jbIZjRGQJrxkjyxp7SAgBhgJm14Eitlicf48GXctE8GG029Dw==
+"@hint/configuration-web-recommended@^7.2.6":
+  version "7.2.6"
+  resolved "https://registry.yarnpkg.com/@hint/configuration-web-recommended/-/configuration-web-recommended-7.2.6.tgz#4985bc80d8e20dac69af39f2051d30a6048446f8"
+  integrity sha512-N9YGwH0LtzSnF1g5RcSELLLjXbiYM7ujvIDFYMwTwq/LsTxVfVOQSni1s6bpfcL4PrybEOa1LY4wG87eUjwh9Q==
   dependencies:
     "@hint/configuration-accessibility" "^1.0.10"
     "@hint/connector-jsdom" "^4.0.13"
@@ -92,7 +92,7 @@
     "@hint/hint-no-html-only-headers" "^2.3.10"
     "@hint/hint-no-http-redirects" "^2.3.10"
     "@hint/hint-no-protocol-relative-urls" "^2.3.10"
-    "@hint/hint-no-vulnerable-javascript-libraries" "^2.9.10"
+    "@hint/hint-no-vulnerable-javascript-libraries" "^2.9.11"
     "@hint/hint-scoped-svg-styles" "^1.1.4"
     "@hint/hint-sri" "^3.2.10"
     "@hint/hint-ssllabs" "^2.3.10"
@@ -371,10 +371,10 @@
   dependencies:
     "@hint/utils" "^6.0.0"
 
-"@hint/hint-no-vulnerable-javascript-libraries@^2.9.10":
-  version "2.9.10"
-  resolved "https://registry.yarnpkg.com/@hint/hint-no-vulnerable-javascript-libraries/-/hint-no-vulnerable-javascript-libraries-2.9.10.tgz#349487ef0bfbe0589f5e56b809427931c53680f4"
-  integrity sha512-i0JiI+oKt2m60o5CypnuTPghZy58f3mJtluMISHVkWtojqsE9e1F347zkZB+CdygWegxsQ9w9m/jytFOk9jRFQ==
+"@hint/hint-no-vulnerable-javascript-libraries@^2.9.11":
+  version "2.9.11"
+  resolved "https://registry.yarnpkg.com/@hint/hint-no-vulnerable-javascript-libraries/-/hint-no-vulnerable-javascript-libraries-2.9.11.tgz#c57f74da262cf9d87998db93c537f34550590041"
+  integrity sha512-dWnLqbYzZPD+S92vv2GOdAtMO8/hKY73Wp0ugxXxGdGTxiABf7nPv3VerHt4Ir9/DWd1Di5V7mcfD3hpo0XGqA==
   dependencies:
     "@hint/utils" "^6.0.0"
     js-library-detector "^5.4.0"
@@ -2173,9 +2173,9 @@ has-yarn@^2.1.0:
   integrity sha512-UqBRqi4ju7T+TqGNdqAO0PaSVGsDGJUBQvk9eUWNGRY1CFGDzYhLWoM7JQEemnlvVcv/YEmc2wNW8BC24EnUsw==
 
 hint@^5.3.1:
-  version "5.3.2"
-  resolved "https://registry.yarnpkg.com/hint/-/hint-5.3.2.tgz#a23858c1f674f40699ee06246525d9eb6f5605f6"
-  integrity sha512-axWt7yTcNCkyOnsq3jqO9VoYur9g37LrHQcICymgdXvRF+j2g5elGHrBBuIw0E4i2Eee4SlPVMBHpYq1bNcjuQ==
+  version "5.3.3"
+  resolved "https://registry.yarnpkg.com/hint/-/hint-5.3.3.tgz#05c810601a5f3624752df924bd07fce56f7a304f"
+  integrity sha512-gyH/4uQ6rJWLxSvrwlzX9HYQvYu3AAk2+YShmwBCF0IxnHzvthegjxo2110fOyiVyLsiwCYeaKPQZKRZpx1y9A==
   dependencies:
     "@hint/utils" "^6.0.0"
     boxen "^4.1.0"
@@ -2191,7 +2191,7 @@ hint@^5.3.1:
     update-notifier "^3.0.1"
   optionalDependencies:
     "@hint/configuration-development" "^7.2.5"
-    "@hint/configuration-web-recommended" "^7.2.5"
+    "@hint/configuration-web-recommended" "^7.2.6"
 
 hosted-git-info@^2.1.4, hosted-git-info@^2.7.1:
   version "2.8.4"
