@@ -24,10 +24,10 @@
     "@hint/formatter-summary" "^3.0.14"
     "@hint/hint-axe" "^4.2.0"
 
-"@hint/configuration-development@^7.3.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@hint/configuration-development/-/configuration-development-7.3.0.tgz#ad6def46679b30aa5302a6e1d4043d94a1f20267"
-  integrity sha512-nAjADzbtLZS3tzrwmGXtzTIlS5sHUF8xou1dCUjtQJa+6cskHiMV79E2E7kriys1mQLrsxeaPlKV4IA5r95NCQ==
+"@hint/configuration-development@^7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@hint/configuration-development/-/configuration-development-7.3.1.tgz#2e95efbc8ee75ef027b86904828bb577022cb9df"
+  integrity sha512-pcmVC+TrpCwT6Tfe+VemUn3LA7Uoch9ctmET7SEFSwO3SYtUv13W9lFEACUqdtkeu9WK1aOVKtU4OvxIceGx5g==
   dependencies:
     "@hint/configuration-accessibility" "^1.0.11"
     "@hint/configuration-progressive-web-apps" "^6.0.11"
@@ -53,10 +53,10 @@
     "@hint/parser-css" "^3.0.14"
     "@hint/parser-html" "^3.0.11"
     "@hint/parser-javascript" "^3.1.0"
-    "@hint/parser-jsx" "^1.0.0"
+    "@hint/parser-jsx" "^1.0.1"
     "@hint/parser-less" "^1.0.6"
     "@hint/parser-sass" "^1.0.6"
-    "@hint/parser-typescript" "^1.0.0"
+    "@hint/parser-typescript" "^1.0.1"
     "@hint/parser-typescript-config" "^2.4.0"
     "@hint/parser-webpack-config" "^2.1.14"
 
@@ -494,10 +494,10 @@
     acorn-jsx-walk "^2.0.0"
     acorn-walk "^7.0.0"
 
-"@hint/parser-jsx@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@hint/parser-jsx/-/parser-jsx-1.0.0.tgz#ffc52ae3b1068e48e5a38f2d9e06290641ec5720"
-  integrity sha512-0LQ9PnSYNuFYw0jQDTEgLOAxd/WauzNUL1fWyj/TSz0sXHeDZG3kAdbDRpUGYo25yhfnzEXx1dsdpJz0qJSE8A==
+"@hint/parser-jsx@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@hint/parser-jsx/-/parser-jsx-1.0.1.tgz#ed49bc89164778c8f2a1883e932ef7740c7b894e"
+  integrity sha512-rH+DVNwk6kX2yvyW+HVKV7W4u8eozXd5jKNscezIF8fvfoFllpfcdTaq78nAi0c4ZhWwNXv5iupm4TYxwfunJA==
   dependencies:
     "@hint/utils" "^6.1.0"
     parse5 "^5.1.0"
@@ -537,10 +537,10 @@
     "@hint/utils" "^6.1.0"
     lodash "^4.17.15"
 
-"@hint/parser-typescript@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@hint/parser-typescript/-/parser-typescript-1.0.0.tgz#33d120899ec9e70ce1110b435bbb72694e7e7169"
-  integrity sha512-q5sA+9HzW9eR2vCXsLVdQcb9Y2143FUrXk5R3TrPg+zv+PfKICeUcWdns9qGFDBsy1++Z2S+kJ7Tq8vG0Y61vA==
+"@hint/parser-typescript@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@hint/parser-typescript/-/parser-typescript-1.0.1.tgz#19a460d64739ec3f193409863e6271c75560ec50"
+  integrity sha512-3tgmOZelebvUVmKMP7Pwou/NEZc6FMMbVZuRZN/+2z0EZuVJE8NXjLOK+FQFHzzNC1U1MezMS19SzkzdvHl5Bg==
   dependencies:
     "@hint/parser-javascript" "^3.1.0"
     "@hint/utils" "^6.1.0"
@@ -2261,9 +2261,9 @@ has-yarn@^2.1.0:
   integrity sha512-UqBRqi4ju7T+TqGNdqAO0PaSVGsDGJUBQvk9eUWNGRY1CFGDzYhLWoM7JQEemnlvVcv/YEmc2wNW8BC24EnUsw==
 
 hint@^5.3.1:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/hint/-/hint-5.4.0.tgz#956c541b9aa8a75310ba3f786022d650b90b7716"
-  integrity sha512-3mFRCRFbFjRIX4Nzb15gMj5ID64QSl3/2pP1+QEAYCm+jfDI/ArsfFAAf1JuI/g4LC1CRjHzVw2vQ1QZtwAarw==
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/hint/-/hint-5.4.1.tgz#a44055bf8cfa9ef4bb93f897e12f5172c393549d"
+  integrity sha512-dxmU+/Y6CplWexhkYZidMYLHItesk3kB0Kfpc+pc6V41YDG+a4L3Kw4P2mk/eQ2fSnEdAnMOau+/yHtSUcVtQw==
   dependencies:
     "@hint/utils" "^6.1.0"
     boxen "^4.1.0"
@@ -2278,7 +2278,7 @@ hint@^5.3.1:
     os-locale "^4.0.0"
     update-notifier "^3.0.1"
   optionalDependencies:
-    "@hint/configuration-development" "^7.3.0"
+    "@hint/configuration-development" "^7.3.1"
     "@hint/configuration-web-recommended" "^7.2.7"
 
 hosted-git-info@^2.1.4, hosted-git-info@^2.7.1:
