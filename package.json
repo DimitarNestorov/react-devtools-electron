@@ -14,7 +14,6 @@
 		"run-electron-8": "yarn workspace example-electron-8 build && yarn workspace example-electron-8 start"
 	},
 	"devDependencies": {
-		"hint": "^5.4.1",
 		"rimraf": "^3.0.2",
 		"ts-node": "^8.6.2",
 		"typescript": "^3.8.3"
