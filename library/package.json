@@ -8,7 +8,8 @@
 	"license": "MIT",
 	"scripts": {
 		"test": "yarn run build",
-		"prepublishOnly": "yarn run clear && yarn run test && yarn run build && yarn run check-extension-version",
+		"prepublishOnly": "yarn run clear && yarn run test && yarn run build && yarn run check-extension-version && yarn run copy-readme",
+		"copy-readme": "cp ../README.md .",
 		"clear": "rimraf ../.cache && rimraf ./dist",
 		"check-extension-version": "ts-node check-extension-version.ts",
 		"copy-extension-build": "rimraf ./extension && cp -r ../vendor/packages/react-devtools-extensions/chrome/build/unpacked extension",

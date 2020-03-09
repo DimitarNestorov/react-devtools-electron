@@ -3,3 +3,4 @@ node_modules/
 extension/
 .cache/
 yarn-error.log
+library/README.md
