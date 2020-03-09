@@ -5,7 +5,7 @@
 
 React Developer Tools for Electron
 
-<p align="center"><img src="https://raw.githubusercontent.com/dimitarnestorov/react-devtools-electron/master/showcase.png" alt="Showcase" width="60%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/dimitarnestorov/react-devtools-electron/master/showcase.png" alt="Showcase" width="80%"></p>
 
 ## Installation
 
