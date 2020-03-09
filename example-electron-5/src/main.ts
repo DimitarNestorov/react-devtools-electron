@@ -2,7 +2,7 @@ import { join } from 'path'
 
 import { app, BrowserWindow } from 'electron'
 
-import('../../dist')
+import('../../library')
 
 
 let mainWindow: Electron.BrowserWindow | null = null

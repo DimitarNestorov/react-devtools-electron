@@ -4,7 +4,6 @@
 		"noImplicitAny": true,
 		"declaration": true,
 		"incremental": true,
-		"tsBuildInfoFile": "./.cache/library.tsbuildinfo",
 		"outDir": "dist",
 		"target": "es5",
 		"removeComments": true,
@@ -13,8 +12,5 @@
 			"es2015",
 			"dom"
 		]
-	},
-	"include": [
-		"src"
-	]
+	}
 }

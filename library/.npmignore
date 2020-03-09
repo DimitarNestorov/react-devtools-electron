@@ -1,11 +1,5 @@
 src
 tsconfig.json
-yarn.lock
 check-extension-version.ts
-.vscode
-.travis.yml
-.cache
-example
 yarn-error.log
-showcase.png
 .hintrc

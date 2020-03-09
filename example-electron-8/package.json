@@ -1,0 +1,17 @@
+{
+	"name": "example-electron-8",
+	"version": "0.0.0",
+	"main": "./dist/main.js",
+	"scripts": {
+		"build": "tsc",
+		"watch": "yarn run build-example --watch",
+		"start": "electron ."
+	},
+	"devDependencies": {
+		"@types/react": "^16.9.23",
+		"@types/react-dom": "^16.9.5",
+		"electron": "^8.1.0",
+		"react": "^16.13.0",
+		"react-dom": "^16.13.0"
+	}
+}

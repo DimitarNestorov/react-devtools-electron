@@ -1,0 +1,13 @@
+{
+	"extends": "../tsconfig.base.json",
+	"compilerOptions": {
+		"jsx": "react",
+		"jsxFactory": "createElement",
+		"sourceMap": true,
+		"tsBuildInfoFile": "dist/.tsbuildinfo",
+		"outDir": "dist",
+	},
+	"include": [
+		"src",
+	],
+}
