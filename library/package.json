@@ -1,6 +1,6 @@
 {
 	"name": "react-devtools-electron",
-	"version": "4.6.0",
+	"version": "4.7.0",
 	"description": "Add React DevTools to your Electron app",
 	"main": "./dist/index.js",
 	"repository": "https://dimitarnestorov@github.com/dimitarnestorov/react-devtools-electron.git",
