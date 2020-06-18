@@ -1,18 +1,25 @@
 {
 	"private": true,
-	"workspaces": [
-		"example-electron-5",
-		"example-electron-6",
-		"example-electron-7",
-		"example-electron-8",
-		"library"
-	],
+	"workspaces": {
+		"nohoist": ["**/electron", "**/electron/**"],
+		"packages": [
+			"example-electron-5",
+			"example-electron-6",
+			"example-electron-7",
+			"example-electron-8",
+			"example-electron-9",
+			"library"
+		]
+	},
 	"scripts": {
+		"library": "yarn workspace react-devtools-electron",
 		"run-electron-5": "yarn workspace example-electron-5 build && yarn workspace example-electron-5 start",
 		"run-electron-6": "yarn workspace example-electron-6 build && yarn workspace example-electron-6 start",
 		"run-electron-7": "yarn workspace example-electron-7 build && yarn workspace example-electron-7 start",
 		"run-electron-8": "yarn workspace example-electron-8 build && yarn workspace example-electron-8 start",
-		"test": "yarn workspace react-devtools-electron test"
+		"run-electron-9": "yarn workspace example-electron-9 build && yarn workspace example-electron-9 start",
+		"build": "yarn library build",
+		"test": "yarn library test"
 	},
 	"devDependencies": {
 		"rimraf": "^3.0.2",
