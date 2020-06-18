@@ -10,15 +10,17 @@ interface ChromeExtensionManifest {
 const extensionPath = join(__dirname, '..', 'extension')
 const extensionManifest: ChromeExtensionManifest = require(`${extensionPath}/manifest.json`)
 
+const majorElectronVersion = parseInt(process.versions.electron, 10)
+
 export function addReactDevToolsExtension(targetSession?: Session): Promise<object> | void {
-	if (parseInt(process.versions.electron, 10) >= 9) {
+	if (majorElectronVersion >= 9) {
 		targetSession = targetSession || session.defaultSession
 		const extensions = targetSession.getAllExtensions()
-		const installedExtension = extensions.filter(extension => extension.name === extensionManifest.name).length
+		const installedExtension = extensions.filter(extension => extension.name === extensionManifest.name)[0]
 		if (!installedExtension) {
 			return targetSession.loadExtension(extensionPath)
 		} else {
-			targetSession.removeExtension(extensionPath)
+			removeReactDevToolsExtension(targetSession, installedExtension.id)
 			return Promise.resolve().then(() => targetSession!.loadExtension(extensionPath))
 		}
 	} else {
@@ -33,6 +35,17 @@ export function addReactDevToolsExtension(targetSession?: Session): Promise<obje
 	}
 }
 
-export function removeReactDevToolsExtension() {
-	BrowserWindow.removeDevToolsExtension(extensionPath)
+export function removeReactDevToolsExtension(targetSession?: Session, id?: string) {
+	if (majorElectronVersion >= 9) {
+		targetSession = targetSession || session.defaultSession
+		if (id) {
+			targetSession.removeExtension(id)
+		} else {
+			const extensions = targetSession.getAllExtensions()
+			const installedExtension = extensions.filter(extension => extension.name === extensionManifest.name)[0]
+			targetSession.removeExtension(installedExtension.id)
+		}
+	} else {
+		BrowserWindow.removeDevToolsExtension(extensionPath)
+	}
 }
