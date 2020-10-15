@@ -12,6 +12,6 @@
 		"@types/react-dom": "^16.9.5",
 		"electron": "^5.0.0",
 		"react": "^16.13.0",
-		"react-dom": "^16.13.0"
+		"react-dom": "^16.14.0"
 	}
 }
