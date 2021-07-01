@@ -8,7 +8,7 @@
 		"start": "electron ."
 	},
 	"devDependencies": {
-		"@types/react": "^16.9.23",
+		"@types/react": "^17.0.13",
 		"@types/react-dom": "^16.9.5",
 		"electron": "^9.0.0",
 		"react": "^16.13.0",
