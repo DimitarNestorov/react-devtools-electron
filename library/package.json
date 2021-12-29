@@ -18,11 +18,16 @@
 		"watch": "yarn run build --watch"
 	},
 	"peerDependencies": {
-		"electron": ">= 5"
+		"electron": ">= 11"
 	},
 	"keywords": [
 		"react",
 		"devtools",
 		"electron"
-	]
+	],
+	"devDependencies": {
+		"@types/node": "^16.11.7",
+		"electron": "^16.0.5",
+		"typescript": "^4.5.4"
+	}
 }
