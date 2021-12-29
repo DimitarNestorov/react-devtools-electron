@@ -1,6 +1,5 @@
-import { join } from 'path'
-
-import { BrowserWindow, Session, session } from 'electron'
+import { session, Session } from 'electron';
+import { join } from 'path';
 
 interface ChromeExtensionManifest {
 	name: string
@@ -24,14 +23,7 @@ export function addReactDevToolsExtension(targetSession?: Session): Promise<obje
 			return Promise.resolve().then(() => targetSession!.loadExtension(extensionPath))
 		}
 	} else {
-		const extensions = BrowserWindow.getDevToolsExtensions()
-		const installedExtension = extensions[extensionManifest.name]
-		if (!installedExtension) {
-			BrowserWindow.addDevToolsExtension(extensionPath)
-		} else if (installedExtension.version !== extensionManifest.version) {
-			removeReactDevToolsExtension()
-			BrowserWindow.addDevToolsExtension(extensionPath)
-		}
+		console.error('Unsupported Electron version. Please upgrade to electron 9 or later.');
 	}
 }
 
@@ -45,7 +37,5 @@ export function removeReactDevToolsExtension(targetSession?: Session, id?: strin
 			const installedExtension = extensions.filter(extension => extension.name === extensionManifest.name)[0]
 			targetSession.removeExtension(installedExtension.id)
 		}
-	} else {
-		BrowserWindow.removeDevToolsExtension(extensionPath)
 	}
 }
