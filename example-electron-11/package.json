@@ -1,5 +1,5 @@
 {
-	"name": "example-electron-7",
+	"name": "example-electron-11",
 	"version": "0.0.0",
 	"main": "./dist/main.js",
 	"scripts": {
@@ -10,7 +10,7 @@
 	"devDependencies": {
 		"@types/react": "^16.9.23",
 		"@types/react-dom": "^16.9.5",
-		"electron": "^7.0.0",
+		"electron": "^11.0.0",
 		"react": "^16.13.0",
 		"react-dom": "^16.13.0"
 	}

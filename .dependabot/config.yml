@@ -4,31 +4,7 @@ update_configs:
     directory: "/"
     update_schedule: "live"
   - package_manager: "javascript"
-    directory: "/example-electron-5"
-    update_schedule: "live"
-    ignored_updates:
-      - match:
-          dependency_name: "electron"
-  - package_manager: "javascript"
-    directory: "/example-electron-6"
-    update_schedule: "live"
-    ignored_updates:
-      - match:
-          dependency_name: "electron"
-  - package_manager: "javascript"
-    directory: "/example-electron-7"
-    update_schedule: "live"
-    ignored_updates:
-      - match:
-          dependency_name: "electron"
-  - package_manager: "javascript"
-    directory: "/example-electron-8"
-    update_schedule: "live"
-    ignored_updates:
-      - match:
-          dependency_name: "electron"
-  - package_manager: "javascript"
-    directory: "/example-electron-9"
+    directory: "/example-electron-11"
     update_schedule: "live"
     ignored_updates:
       - match:
