@@ -17,10 +17,10 @@ export function addReactDevToolsExtension(targetSession?: Session): Promise<obje
 		const extensions = targetSession.getAllExtensions()
 		const installedExtension = extensions.filter(extension => extension.name === extensionManifest.name)[0]
 		if (!installedExtension) {
-			return targetSession.loadExtension(extensionPath)
+			return targetSession.loadExtension(extensionPath, { allowFileAccess: true })
 		} else {
 			removeReactDevToolsExtension(targetSession, installedExtension.id)
-			return Promise.resolve().then(() => targetSession!.loadExtension(extensionPath))
+			return Promise.resolve().then(() => targetSession!.loadExtension(extensionPath, { allowFileAccess: true }))
 		}
 	} else {
 		console.error('Unsupported Electron version. Please upgrade to electron 9 or later.');
