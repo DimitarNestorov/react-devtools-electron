@@ -1,8 +1,7 @@
 import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
 
-import('../../library');
-
+import { addReactDevToolsExtension } from '../../library';
 
 let mainWindow: Electron.BrowserWindow | null = null
 
@@ -25,4 +24,7 @@ function createWindow() {
 	})
 }
 
-app.on('ready', createWindow)
+app.on('ready', () => {
+	addReactDevToolsExtension()
+	createWindow()
+})

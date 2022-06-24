@@ -18,13 +18,27 @@ npm install --save-dev react-devtools-electron
 Inside the main process add the following line:
 
 ```javascript
-isDev && require('react-devtools-electron')
+const reactDevToolsElectron = require('react-devtools-electron');
+
+app.on('ready', () => {
+	if (isDev) {
+		reactDevToolsElectron.addReactDevToolsExtension();
+	}
+	createWindow();
+});
 ```
 
 Or if you're using TypeScript:
 
 ```typescript
-isDev && import('react-devtools-electron')
+import { addReactDevToolsExtension } from 'react-devtools-electron';
+
+app.on('ready', () => {
+	if (isDev) {
+		addReactDevToolsExtension();
+	}
+	createWindow();
+});
 ```
 
 `isDev` represents a boolean which is true when your app is running in development mode. If you haven't defined one yourself you can use [`electron-is-dev`](https://www.npmjs.com/package/electron-is-dev).
