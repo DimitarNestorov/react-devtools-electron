@@ -3,19 +3,16 @@
 	"workspaces": {
 		"nohoist": ["**/electron", "**/electron/**"],
 		"packages": [
-			"example-electron-11",
 			"library"
 		]
 	},
 	"scripts": {
 		"library": "yarn workspace react-devtools-electron",
-		"run-electron-11": "yarn workspace example-electron-11 build && yarn workspace example-electron-11 start",
+		"run-electron-11": "cd example-electron-11 && yarn install && yarn build && yarn start",
 		"build": "yarn library build",
 		"test": "yarn library test"
 	},
 	"devDependencies": {
-		"rimraf": "^3.0.2",
-		"ts-node": "^8.6.2",
-		"typescript": "^3.8.3"
+		"typescript": "^3.7.5"
 	}
 }

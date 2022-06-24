@@ -1,25 +1,22 @@
-import { join } from 'path'
+import { app, BrowserWindow } from 'electron';
+import * as path from 'path';
 
-import { app, BrowserWindow } from 'electron'
-
-import('../../library')
+import('../../library');
 
 
 let mainWindow: Electron.BrowserWindow | null = null
 
 function createWindow() {
 	mainWindow = new BrowserWindow({
-		height: 600,
-		width: 800,
+		width: 1280,
+		height: 768,
 		webPreferences: {
 			nodeIntegration: true
 		}
 	})
 
-	mainWindow.loadURL('file://' + join(__dirname, '../index.html'))
+	mainWindow.loadURL('file://' + path.join(__dirname, '../index.html'))
 
-	mainWindow.webContents.openDevTools()
-	mainWindow.webContents.closeDevTools()
 	mainWindow.webContents.openDevTools()
 
 	mainWindow.on('closed', () => {
