@@ -1,0 +1,18 @@
+{
+	"name": "example-electron-19",
+	"version": "0.0.0",
+	"main": "./dist/main.js",
+	"scripts": {
+		"build": "tsc",
+		"watch": "yarn run build-example --watch",
+		"start": "electron ."
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.14",
+		"@types/react-dom": "^18.0.5",
+		"electron": "^19.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"typescript": "^3.7.5"
+	}
+}
