@@ -7,12 +7,11 @@
 		]
 	},
 	"scripts": {
-		"library": "yarn workspace react-devtools-electron",
 		"run-electron-11": "cd example-electron-11 && yarn install && yarn build && yarn start",
 		"run-electron-17": "cd example-electron-17 && yarn install && yarn build && yarn start",
 		"run-electron-19": "cd example-electron-19 && yarn install && yarn build && yarn start",
-		"build": "yarn library build",
-		"test": "yarn library test"
+		"build": "cd library && yarn build",
+		"test": "cd library && yarn test"
 	},
 	"devDependencies": {
 		"typescript": "^3.7.5"
