@@ -4,3 +4,5 @@ extension/
 .cache/
 yarn-error.log
 library/README.md
+.DS_Store
+Thumbs.db
