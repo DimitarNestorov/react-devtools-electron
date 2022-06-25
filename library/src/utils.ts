@@ -11,16 +11,16 @@ const extensionManifest: ChromeExtensionManifest = require(`${extensionPath}/man
 
 const majorElectronVersion = parseInt(process.versions.electron, 10)
 
-export function addReactDevToolsExtension(targetSession?: Session): Promise<object> | void {
+export function addReactDevToolsExtension(targetSession?: Session, options = { allowFileAccess: true }): Promise<object> | void {
 	if (majorElectronVersion >= 9) {
 		targetSession = targetSession || session.defaultSession
 		const extensions = targetSession.getAllExtensions()
 		const installedExtension = extensions.filter(extension => extension.name === extensionManifest.name)[0]
 		if (!installedExtension) {
-			return targetSession.loadExtension(extensionPath, { allowFileAccess: true })
+			return targetSession.loadExtension(extensionPath, options)
 		} else {
 			removeReactDevToolsExtension(targetSession, installedExtension.id)
-			return Promise.resolve().then(() => targetSession!.loadExtension(extensionPath, { allowFileAccess: true }))
+			return Promise.resolve().then(() => targetSession!.loadExtension(extensionPath, options))
 		}
 	} else {
 		console.error('Unsupported Electron version. Please upgrade to electron 9 or later.');
